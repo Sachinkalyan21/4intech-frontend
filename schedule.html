@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Schedule Appointment</title>
+</head>
+<body>
+    <main>
+        <h1>Schedule an Appointment</h1>
+        <p>Available slots:</p>
+        <ul id="availableSlots"></ul>
+    </main>
+    <script>
+        // Dynamically populate available slots (mock example)
+        document.addEventListener('DOMContentLoaded', () => {
+            const slots = ['2024-11-20T10:00', '2024-11-20T11:00'];
+            const list = document.getElementById('availableSlots');
+
+            slots.forEach(slot => {
+                const li = document.createElement('li');
+                li.textContent = slot;
+                list.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>

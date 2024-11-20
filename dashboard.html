@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <main>
+        <h1>Dashboard</h1>
+        <p>Welcome, <span id="username"></span></p>
+        <h2>Your Appointments</h2>
+        <ul id="appointments"></ul>
+        <h2>Set Availability</h2>
+        <form id="availabilityForm">
+            <input type="datetime-local" id="startTime" required />
+            <input type="datetime-local" id="endTime" required />
+            <button type="submit">Set Availability</button>
+        </form>
+        <a href="index.html">Logout</a>
+    </main>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
